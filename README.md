@@ -15,28 +15,6 @@ Denoising Diffusion Probabilistic Models are a type of generative model that wor
 
 The model learns to estimate the noise added at each step, enabling it to generate new samples by starting from pure noise and iteratively denoising.
 
-## Features
-
-- Simple, educational implementation of DDPM
-- PyTorch-based for easy understanding and modification
-- Minimal dependencies for quick setup
-- Well-commented code explaining key concepts
-
-## Requirements
-
-- Python 3.7+
-- PyTorch
-- NumPy
-- Matplotlib (for visualization)
-
-## Installation
-
-```bash
-git clone <repository-url>
-cd DDPM-Toy-Example
-pip install torch numpy matplotlib
-```
-
 ## Usage
 
 Run the notebook or script to see DDPM in action on a simple toy dataset. The example demonstrates:
@@ -49,7 +27,6 @@ Run the notebook or script to see DDPM in action on a simple toy dataset. The ex
 ## References
 
 - [Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239) - Ho et al., 2020
-- [Understanding Diffusion Models: A Unified Perspective](https://arxiv.org/abs/2208.11970) - Luo, 2022
 
 ## License
 
