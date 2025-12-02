@@ -4,7 +4,13 @@ A minimal working example of a Denoising Diffusion Probabilistic Model (DDPM) im
 
 ## Overview
 
-This repository contains a toy example demonstrating the core concepts of Denoising Diffusion Probabilistic Models (DDPMs), a class of generative models that learn to generate data by gradually denoising a normally distributed variable.
+This repository contains examples demonstrating the core concepts of Denoising Diffusion Probabilistic Models (DDPMs), a class of generative models that learn to generate data by gradually denoising a normally distributed variable.
+
+### Notebooks
+
+1. **[ddpm_toy_example.ipynb](ddpm_toy_example.ipynb)** - A minimal 2D toy example with two Gaussian clusters. Great for understanding the core mathematics and visualizing the diffusion process.
+
+2. **[ddpm_cifar10_cats.ipynb](ddpm_cifar10_cats.ipynb)** - DDPM applied to real images (cat images from CIFAR-10). Demonstrates how the same principles scale to 32×32 RGB images using a U-Net architecture.
 
 ## What is DDPM?
 
@@ -17,11 +23,16 @@ The model learns to estimate the noise added at each step, enabling it to genera
 
 ## Usage
 
-Run the notebook or script to see DDPM in action on a simple toy dataset. The example demonstrates:
+Run either notebook to see DDPM in action:
+
+- **Toy Example**: Simple 2D demonstration on synthetic data
+- **CIFAR-10 Cats**: Image generation on real cat images
+
+Both examples demonstrate:
 
 - Setting up the noise schedule
 - Implementing the forward diffusion process
-- Training a simple neural network to predict noise
+- Training a neural network to predict noise
 - Sampling new data points using the learned model
 
 ## References
