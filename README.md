@@ -10,7 +10,9 @@ This repository contains examples demonstrating the core concepts of Denoising D
 
 1. **[ddpm_toy_example.ipynb](ddpm_toy_example.ipynb)** - A minimal 2D toy example with two Gaussian clusters. Great for understanding the core mathematics and visualizing the diffusion process.
 
-2. **[ddpm_cifar10_cats.ipynb](ddpm_cifar10_cats.ipynb)** - DDPM applied to real images (cat images from CIFAR-10). Demonstrates how the same principles scale to 32×32 RGB images using a U-Net architecture.
+2. **[ddpm_duffing_oscillator.ipynb](ddpm_duffing_oscillator.ipynb)** - A conditional DDPM applied to chaotic Duffing oscillator trajectories. Demonstrates conditioning on initial conditions (x₀, v₀) to generate specific dynamical system trajectories in phase space.
+
+3. **[ddpm_cifar10_cats.ipynb](ddpm_cifar10_cats.ipynb)** - DDPM applied to real images (cat images from CIFAR-10). Demonstrates how the same principles scale to 32×32 RGB images using a U-Net architecture.
 
 ## What is DDPM?
 
@@ -23,12 +25,13 @@ The model learns to estimate the noise added at each step, enabling it to genera
 
 ## Usage
 
-Run either notebook to see DDPM in action:
+Run any of the notebooks to see DDPM in action:
 
-- **Toy Example**: Simple 2D demonstration on synthetic data
+- **Toy Example**: Simple 2D demonstration on synthetic data (two Gaussian clusters)
+- **Duffing Oscillator**: Conditional generation of chaotic dynamical system trajectories
 - **CIFAR-10 Cats**: Image generation on real cat images
 
-Both examples demonstrate:
+These examples demonstrate:
 
 - Setting up the noise schedule
 - Implementing the forward diffusion process
